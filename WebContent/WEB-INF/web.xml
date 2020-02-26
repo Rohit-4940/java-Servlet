@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+ <dependency>
+    <groupId>jstl</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+ <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>Controller.Loginservlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>start</servlet-name>
+        <servlet-class>Controller.Loginservlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>start</servlet-name>
+        <url-pattern>/start</url-pattern>
+    </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>Controller.RegisterServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>Controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <description></description>
+    <display-name>Product</display-name>
+    <servlet-name>Product</servlet-name>
+    <servlet-class>Controller.productServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Product</servlet-name>
+    <url-pattern>/productServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>Cloth</display-name>
+    <servlet-name>Cloth</servlet-name>
+    <servlet-class>Controller.ClothServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cloth</servlet-name>
+    <url-pattern>/ClothServlet</url-pattern>
+  </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+    
+   
+</web-app>
+</element>
